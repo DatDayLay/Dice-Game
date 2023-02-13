@@ -1,0 +1,404 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Allerta+Stencil&family=Anton&family=Big+Shoulders+Stencil+Display:wght@100&family=Big+Shoulders+Stencil+Text:wght@100&family=Big+Shoulders+Text:wght@100&family=Elsie+Swash+Caps&family=Gugi&family=Libre+Barcode+39+Text&family=Major+Mono+Display&family=Monoton&family=Plaster&family=Rubik+Glitch&family=Supermercado+One&family=Tourney&family=Train+One&family=Wallpoet&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  /* height: 100vh; */
+}
+.ddiv {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+}
+.major-div {
+  display: flex;
+  background: linear-gradient(
+    120deg,
+    rgb(158, 0, 26),
+    rgb(189, 40, 65),
+    rgb(190, 30, 57),
+    rgb(196, 7, 95),
+    rgb(184, 15, 133)
+  );
+  height: 100vh;
+}
+.sub-div1 {
+  width: 30%;
+  background-color: rgb(168, 77, 92);
+  margin-left: auto;
+  /* margin-right: auto; */
+  margin-top: 4%;
+  height: 90vh;
+  border-radius: 10px 0 0 10px;
+  color: rgb(211, 73, 96);
+}
+.sub-div2 {
+  width: 30%;
+  background-color: rgb(168, 77, 92);
+  /* margin-left: auto; */
+  margin-right: auto;
+  margin-top: 4%;
+  height: 90vh;
+  border-radius: 0 10px 10px 0;
+  color: rgb(211, 73, 96);
+}
+
+.player {
+  background-color: transparent;
+  font-family: "Tourney", cursive;
+  font-weight: 400;
+  font-size: 40px;
+  text-align: center;
+  margin-top: 20%;
+  color: rgb(54, 50, 50);
+}
+.big-score {
+  background-color: transparent;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 70px;
+  text-align: center;
+  /* color: rgb(211, 73, 96); */
+  margin-top: 10%;
+}
+.tiny-div {
+  background-color: rgb(212, 35, 64);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  text-align: center;
+  width: 40%;
+  color: #fff;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 35%;
+  border-radius: 10px;
+}
+.current {
+  font-weight: lighter;
+  padding-bottom: 3%;
+  padding-top: 10%;
+}
+.lil-score {
+  padding-bottom: 10%;
+}
+.btn1 {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  border: none;
+  font-weight: bolder;
+  font-size: medium;
+  position: absolute;
+  /* margin-left: ; */
+  width: 10%;
+  height: 5%;
+  margin-top: 4%;
+  border-radius: 50px;
+  display: block;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  color: rgb(54, 50, 50);
+  background: linear-gradient(to right, white 50%, rgb(250, 214, 220) 50%);
+  cursor: pointer;
+}
+
+.btn2 {
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  display: block;
+  position: absolute;
+  border-radius: 50px;
+  border: none;
+  width: 10%;
+  height: 5%;
+  color: rgb(54, 50, 50);
+  background: linear-gradient(to right, white 50%, rgb(250, 214, 220) 50%);
+  font-weight: bolder;
+  font-size: medium;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  margin-top: 12.5%;
+  cursor: pointer;
+}
+.btn3 {
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  display: block;
+  position: absolute;
+  border-radius: 50px;
+  border: none;
+  width: 7%;
+  height: 5%;
+  color: rgb(54, 50, 50);
+  background: linear-gradient(to right, white 50%, rgb(250, 214, 220) 50%);
+  font-weight: bolder;
+  font-size: medium;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  margin-top: 16%;
+  cursor: pointer;
+}
+
+#but:hover {
+  background: rgb(241, 92, 119);
+  color: white;
+}
+
+.dice-1 {
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  display: block;
+  position: absolute;
+  background-color: #000;
+  width: 8%;
+  height: 16%;
+}
+.d-1-1 {
+  background-color: #fff;
+  width: 10%;
+  height: 10%;
+  margin-top: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50px;
+}
+.dice-2 {
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  display: block;
+  position: absolute;
+  background-color: #000;
+  width: 8%;
+  height: 16%;
+}
+
+.d-2-1 {
+  background-color: #fff;
+  width: 10%;
+  height: 10%;
+  margin-top: 72%;
+  margin-left: 10%;
+  border-radius: 50px;
+}
+.d-2-2 {
+  background-color: #fff;
+  width: 10%;
+  height: 10%;
+  margin-left: 80%;
+  margin-top: -70%;
+  border-radius: 50px;
+}
+.dice-3 {
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  display: block;
+  position: absolute;
+  background-color: #000;
+  width: 8%;
+  height: 16%;
+}
+.d-3-1 {
+  background-color: #fff;
+  width: 10%;
+  height: 10%;
+  margin-top: 72%;
+  margin-left: 10%;
+  border-radius: 50px;
+}
+.d-3-2 {
+  background-color: #fff;
+  width: 10%;
+  height: 10%;
+  margin-top: -40%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50px;
+}
+.d-3-3 {
+  background-color: #fff;
+  width: 10%;
+  height: 10%;
+  margin-left: 80%;
+  margin-top: -40%;
+  border-radius: 50px;
+}
+
+.dice-4 {
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  display: block;
+  position: absolute;
+  background-color: #000;
+  width: 8%;
+  height: 16%;
+}
+.d-4-1 {
+  background-color: #fff;
+  width: 10%;
+  height: 10%;
+  margin-top: 10%;
+  margin-left: 10%;
+  border-radius: 50px;
+}
+.d-4-2 {
+  background-color: #fff;
+  width: 10%;
+  height: 10%;
+  margin-top: -10%;
+  margin-left: 80%;
+  border-radius: 50px;
+}
+.d-4-3 {
+  background-color: #fff;
+  width: 10%;
+  height: 10%;
+  margin-top: 55%;
+  margin-left: 10%;
+  border-radius: 50px;
+}
+
+.d-4-4 {
+  background-color: #fff;
+  width: 10%;
+  height: 10%;
+  margin-top: -9%;
+  margin-left: 80%;
+  border-radius: 50px;
+}
+
+.dice-5 {
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  display: block;
+  position: absolute;
+  background-color: #000;
+  width: 8%;
+  height: 16%;
+}
+.d-5-1 {
+  background-color: #fff;
+  width: 10%;
+  height: 10%;
+  margin-top: 10%;
+  margin-left: 10%;
+  border-radius: 50px;
+}
+.d-5-2 {
+  background-color: #fff;
+  width: 10%;
+  height: 10%;
+  margin-top: -10%;
+  margin-left: 80%;
+  border-radius: 50px;
+}
+.d-5-3 {
+  background-color: #fff;
+  width: 10%;
+  height: 10%;
+  margin-top: 55%;
+  margin-left: 10%;
+  border-radius: 50px;
+}
+.d-5-4 {
+  background-color: #fff;
+  width: 10%;
+  height: 10%;
+  margin-top: -9%;
+  margin-left: 80%;
+  border-radius: 50px;
+}
+.d-5-5 {
+  background-color: #fff;
+  width: 10%;
+  height: 10%;
+  margin-top: -40%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50px;
+}
+.dice-6 {
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  display: block;
+  position: absolute;
+  background-color: #000;
+  width: 8%;
+  height: 16%;
+}
+.d-6-1 {
+  background-color: #fff;
+  width: 10%;
+  height: 10%;
+  margin-top: 10%;
+  margin-left: 10%;
+  border-radius: 50px;
+}
+.d-6-2 {
+  background-color: #fff;
+  width: 10%;
+  height: 10%;
+  margin-top: -10%;
+  margin-left: 80%;
+  border-radius: 50px;
+}
+.d-6-3 {
+  background-color: #fff;
+  width: 10%;
+  height: 10%;
+  margin-top: 55%;
+  margin-left: 10%;
+  border-radius: 50px;
+}
+.d-6-4 {
+  background-color: #fff;
+  width: 10%;
+  height: 10%;
+  margin-top: -9%;
+  margin-left: 80%;
+  border-radius: 50px;
+}
+.d-6-5 {
+  background-color: #fff;
+  width: 10%;
+  height: 10%;
+  margin-top: -40%;
+  margin-left: 10%;
+  margin-right: auto;
+  border-radius: 50px;
+}
+.d-6-6 {
+  background-color: #fff;
+  width: 10%;
+  height: 10%;
+  margin-top: -10%;
+  margin-left: auto;
+  margin-right: 10%;
+  border-radius: 50px;
+}
+
+.dice {
+  display: none;
+}
+.dice2 {
+  display: none;
+}
+.dice3 {
+  display: none;
+}
+.dice4 {
+  display: none;
+}
+.dice5 {
+  display: none;
+}
+.dice6 {
+  display: none;
+}
+
+.player-active {
+  background-color: rgb(240, 166, 178);
+}
+
+.player-winner {
+  background-color: rgb(137, 207, 180);
+  color: rgb(44, 28, 28);
+}
